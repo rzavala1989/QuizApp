@@ -1,0 +1,186 @@
+* { 
+   /*
+
+   remember to do this so padding doesn't affect height and width of block elements
+   
+   */
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+/*Grid*/
+
+.col-6{
+  width:92%;
+}
+
+@media only screen and (min-width: 640px) {
+  
+  /* 6 columns, 6/12 in % */
+  .col-6 {
+    width: 46%;
+  }
+}
+
+.row{
+  padding-bottom:40px;
+}
+
+
+/*Grid*/
+
+body {
+  font-family: "Josefin Sans";
+  background: url("https://images3.alphacoders.com/211/thumb-1920-211239.jpg");
+ 
+}
+
+
+main {
+  padding-top:30px;
+  padding-bottom: 30px;
+  background-color:white;
+  width:92%;
+  /* height:850px; */
+  margin: 50px auto 30px;
+  border: 3px solid black;
+  border-radius:2%;
+}
+
+header {
+  margin:auto;
+}
+
+.quiz-name {
+  margin: 40px auto 20px;
+  border: 3px solid #3a3a3a;
+  border-radius:7px;
+  width:80%;
+  height:200px;
+  padding:15px 35px;
+  background-color: #3a3a3a;
+  
+}
+h1 {
+  font-size:35px;
+  letter-spacing: .25em;
+  color: white;
+  text-align: center;
+  margin: 10% auto 10%;
+}
+
+.start-quiz{
+  color:white;
+  background-color:#3a3a3a;
+  margin-left: 40%;
+  width:20%;
+  line-height:20px;
+  border-style: none;
+  border-radius:5px;
+  font-weight: bold;
+  font-size:13px;
+
+}
+
+.buttons {
+  color:white;
+  background-color:#3a3a3a;
+  border-radius:5px;
+  border-style: none;
+  font-weight: bold;
+  font-size:15px;
+  padding:10px;
+ 
+  
+}
+
+.next-question{
+  margin:10% 40%;
+}
+.words-in-button{
+  text-align:center;
+}
+
+button:hover{
+  cursor:pointer;
+}
+
+hr {
+  color:black;
+}
+
+.quiz-window, .quiz-results {
+  border: 3px solid black;
+  margin-top:5px;
+  margin-bottom:0px;
+  height:425px;
+  padding:15px;
+  background-color:white;
+  
+}
+
+.correct, .total {
+  font-size:1.25em;
+  font-weight:bold;
+}
+
+.quiz-question {
+  margin-left: 2px;
+  margin-right:2px;
+  margin-bottom:15px;
+  font-size:1em;
+}
+
+fieldset{
+  margin: auto 6px 20px 6px;
+  display:flex;
+  align-items:center;
+}
+
+legend{
+ margin-top:10px;
+ text-decoration:underline;
+ letter-spacing:2px;
+ font-size:1.2em;
+}
+
+.quiz-window{
+  float: left;
+  margin-left: 4%;
+  margin-right:0;
+  border-radius: 7px 0 0 7px;
+}
+
+.quiz-results{
+  float: right;
+  margin-left: 0;
+  margin-right: 4%;
+  border-radius:0 7px 7px 0;
+}
+
+.quiz-init{
+  text-align:center;
+  font-size:2em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.quiz-window > p{
+  padding-left: 20px;
+}
+
+.hidden{
+  display:none;
+}
+
+.test-status{
+  margin:auto;
+  text-align:center;
+  font-size:2em;
+  line-height:1.5em;
+}
+

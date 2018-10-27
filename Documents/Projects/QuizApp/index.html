@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     crossorigin="anonymous"></script>
+   
+  </head>
+  <body>
+    <main role="main">
+      <div role="banner" class="quiz-name">
+          <header role="heading">
+          <h1>Mr. Zavala's Quiz</h1>
+        </header>
+      </div>
+      <button role="button" class="start-quiz">Start Quiz
+      </button>
+    </main>
+      <div class="row"> 
+        <section role="application" class="col-6 quiz-window">
+          <h2>Touch the Sky!</h2>
+          <hr>
+          <p class="quiz-init">Click button <br>to start the quiz!</p>
+          <fieldset class="field-set hidden">
+            <form role='form radiogroup' onsubmit="return false" >
+              <div class="quiz-question"></div>
+            </form>
+            <span class="alert" role="alert"></span>
+          </fieldset>
+        </section>
+        <section role="application" class ="quiz-results col-6">
+          <h2>Results</h2>
+          <hr><br>
+          <p class="test-status"></p>
+          <div class="next-question"></div>
+        </section>
+      </div>      
+      <br><br><br>
+    <script src="index.js"></script>
+  </body>
+</html>
